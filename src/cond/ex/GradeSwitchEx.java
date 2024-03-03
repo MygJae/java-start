@@ -1,0 +1,33 @@
+package cond.ex;
+
+public class GradeSwitchEx {
+
+    public static void main(String[] args) {
+        /**
+         * 학점에 따라 성취도 출력
+         * [A]: "탁월한 성과입니다."
+         * [B]: "좋은 성과입니다."
+         * [C]: "준수한 성과입니다."
+         * [D]: "향상이 필요합니다."
+         * [F]: "불합격입니다."
+         * 나머지: "잘못된 학점입니다."
+         * 등급은 String형 변수 grade
+         * switch문으로 만들기
+         */
+
+        String grade = "Z";
+
+        String result = switch (grade) {
+            case "A" -> "탁월한 성과입니다.";
+            case "B" -> "좋은 성과입니다.";
+            case "C" -> "준수한 성과입니다.";
+            case "D" -> "향상이 필요합니다.";
+            case "F" -> "불합격입니다.";
+            default ->  "잘못된 학점입니다.";
+        };
+        System.out.println(result);
+    }
+
+
+}
+
